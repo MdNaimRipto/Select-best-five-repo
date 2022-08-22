@@ -1,7 +1,7 @@
 function getInputValueById(inputId) {
     const inputField = document.getElementById(inputId);
     const inputString = inputField.value;
-    const inputValue = parseFloat(inputString);
+    const inputValue = parseInt(inputString);
     inputField.value = "";
     return inputValue;
 }
@@ -9,13 +9,13 @@ function getInputValueById(inputId) {
 function getTextValueById(textId) {
     const textField = document.getElementById(textId);
     const textString = textField.innerText;
-    const textValue = parseFloat(textString);
+    const textValue = parseInt(textString);
     return textValue;
 }
 
 function arrayLength() {
-    const liLength = document.getElementsByClassName("single-list");
-    return liLength;
+    const Length = document.getElementsByClassName("single-list");
+    return Length;
 }
 
 function setTextValueById(textId, textValue) {
