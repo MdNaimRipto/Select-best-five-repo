@@ -1,0 +1,42 @@
+.header {
+    background: linear-gradient(#00000073, #00000099), url(../images/background/best-five-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 63vh;
+}
+
+.header h2 {
+    color: lightslategrey;
+}
+
+.header p {
+    color: whitesmoke;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:576px) {
+    .header {
+        height: 47vh;
+    }
+
+    .header h2 {
+        font-size: 30px;
+    }
+
+    .header p {
+        font-size: 16px;
+        width: 290px;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .header {
+        height: 39vh;
+    }
+
+    .header p {
+        width: 415px;
+    }
+}
