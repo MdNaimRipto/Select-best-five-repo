@@ -33,13 +33,14 @@
                             <img class="w-full" src="images/players/Lionel-Messi.png" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title text-white">Lionel Messi</h2>
+                            <h2 class="card-title text-white player-name">Lionel Messi</h2>
                             <div class="flex gap-2">
                                 <p>769 Goals</p>
                                 <span>.</span>
                                 <p>331 Assists</p>
                             </div>
-                            <button class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white">Select</button>
+                            <button
+                                class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white player-select">Select</button>
                         </div>
                     </div>
                     <!-- card-2 -->
@@ -48,13 +49,14 @@
                             <img class="w-full" src="images/players/Neymar-Jr.png" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title text-white">Neymar Jr</h2>
+                            <h2 class="card-title text-white player-name">Neymar Jr</h2>
                             <div class="flex gap-2">
                                 <p>240 Goals</p>
                                 <span>.</span>
                                 <p>143 Assists</p>
                             </div>
-                            <button class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white">Select</button>
+                            <button
+                                class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white player-select">Select</button>
                         </div>
                     </div>
                     <!-- card-3 -->
@@ -63,13 +65,14 @@
                             <img class="w-full" src="images/players/Kylian-Mbappe.png" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title text-white">Kylian Mbappe</h2>
+                            <h2 class="card-title text-white player-name">Kylian Mbappe</h2>
                             <div class="flex gap-2">
                                 <p>54 Goals</p>
                                 <span>.</span>
                                 <p>33 Assists</p>
                             </div>
-                            <button class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white">Select</button>
+                            <button
+                                class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white player-select">Select</button>
                         </div>
                     </div>
                     <!-- card-4 -->
@@ -78,13 +81,14 @@
                             <img class="w-full" src="images/players/Victor-Machado.png" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title text-white">Victor Machado</h2>
+                            <h2 class="card-title text-white player-name">Victor Machado</h2>
                             <div class="flex gap-2">
                                 <p>19 Goals</p>
                                 <span>.</span>
                                 <p>8 Assists</p>
                             </div>
-                            <button class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white">Select</button>
+                            <button
+                                class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white player-select">Select</button>
                         </div>
                     </div>
                     <!-- card-5 -->
@@ -93,13 +97,14 @@
                             <img class="w-full" src="images/players/Sergio-Ramos.png" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title text-white">Sergio Ramos</h2>
+                            <h2 class="card-title text-white player-name">Sergio Ramos</h2>
                             <div class="flex gap-2">
                                 <p>16 Goals</p>
                                 <span>.</span>
                                 <p>5 Assists</p>
                             </div>
-                            <button class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white">Select</button>
+                            <button
+                                class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white player-select">Select</button>
                         </div>
                     </div>
                     <!-- card-6 -->
@@ -108,13 +113,14 @@
                             <img class="w-full" src="images/players/Renato-Sanches.png" />
                         </figure>
                         <div class="card-body items-center text-center">
-                            <h2 class="card-title text-white">Renato Sanches</h2>
+                            <h2 class="card-title text-white player-name">Renato Sanches</h2>
                             <div class="flex gap-2">
                                 <p>12 Goals</p>
                                 <span>.</span>
                                 <p>4 Assists</p>
                             </div>
-                            <button class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white">Select</button>
+                            <button
+                                class="bg-sky-700 w-full py-2 mt-4 font-semibold text-white player-select">Select</button>
                         </div>
                     </div>
                 </div>
@@ -124,7 +130,7 @@
                     <div
                         class="text-center bg-black h-full md:h-1/6 lg:h-2/4 mb-6 md:mb-6 lg:mb-0 mt-6 md:mt-0 lg:mt-0">
                         <h3 class="pt-6 text-white font-semibold text-2xl">Selected-5</h3>
-                        <ol class="text-left pl-8 pt-6 pb-12 leading-9">
+                        <ol id="list-container" class="text-left pl-12 pt-6 pb-12 leading-9">
 
                         </ol>
                     </div>
@@ -145,10 +151,10 @@
                             <input class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
                         </div>
                         <div class="pt-2 w-4/5 mx-auto flex justify-between">
-                            <p class="my-auto font-semibold">Manager :</p>
+                            <p class="my-auto font-semibold">Coach :</p>
                             <input class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
                         </div>
-                        <button class="bg-sky-700 w-4/5 py-2 mt-4 font-semibold text-white">Calculate</button>
+                        <button class="bg-sky-700 w-4/5 py-2 mt-4 font-semibold text-white">Calculate Total</button>
                         <div class="flex justify-between pt-4 pl-8 w-4/5 pb-10 md:pb-0 lg:pb-0">
                             <h2 class="text-white font-semibold text-left">Total Expence:</h2>
                             <p>$<span>0</span></p>
@@ -162,6 +168,9 @@
     <footer>
         <h2 class="py-10 text-center border-t-2">Copyright @ 2022 All Rights Reserved.</h2>
     </footer>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/best-five.js"></script>
 </body>
 
 </html>
