@@ -17,19 +17,20 @@
     <header class="w-full">
         <div class="header text-center">
             <h2 class="text-5xl text-orange-600 font-semibold pb-4 pt-32">Best Five Football Players</h2>
-            <p class="w-2/4 mx-auto">Select best five football players for your team and become the world's best
+            <p class="w-2/4 mx-auto">Select best five football players for your team and create the world's best
                 football team.
             </p>
         </div>
     </header>
     <main>
-        <div class="container w-4/5 mx-auto py-12">
-            <div class="flex gap-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!--Starting of Card Container -->
+        <div class="container w-4/5 mx-auto pt-12 pb-28">
+            <div class="flex gap-6 flex-col md:flex-row lg:flex-row justify-evenly">
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-6">
                     <!-- card-1 -->
                     <div class="card w-full bg-black rounded-none">
                         <figure>
-                            <img src="images/players/Lionel-Messi.png" />
+                            <img class="w-full" src="images/players/Lionel-Messi.png" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Lionel Messi</h2>
@@ -44,7 +45,7 @@
                     <!-- card-2 -->
                     <div class="card w-full bg-black rounded-none">
                         <figure>
-                            <img src="images/players/Neymar-Jr.png" />
+                            <img class="w-full" src="images/players/Neymar-Jr.png" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Neymar Jr</h2>
@@ -59,7 +60,7 @@
                     <!-- card-3 -->
                     <div class="card w-full bg-black rounded-none">
                         <figure>
-                            <img src="images/players/Kylian-Mbappe.png" />
+                            <img class="w-full" src="images/players/Kylian-Mbappe.png" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Kylian Mbappe</h2>
@@ -74,7 +75,7 @@
                     <!-- card-4 -->
                     <div class="card w-full bg-black rounded-none">
                         <figure>
-                            <img src="images/players/Victor-Machado.png" />
+                            <img class="w-full" src="images/players/Victor-Machado.png" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Victor Machado</h2>
@@ -89,7 +90,7 @@
                     <!-- card-5 -->
                     <div class="card w-full bg-black rounded-none">
                         <figure>
-                            <img src="images/players/Sergio-Ramos.png" />
+                            <img class="w-full" src="images/players/Sergio-Ramos.png" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Sergio Ramos</h2>
@@ -104,7 +105,7 @@
                     <!-- card-6 -->
                     <div class="card w-full bg-black rounded-none">
                         <figure>
-                            <img src="images/players/Renato-Sanches.png" />
+                            <img class="w-full" src="images/players/Renato-Sanches.png" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-white">Renato Sanches</h2>
@@ -117,31 +118,49 @@
                         </div>
                     </div>
                 </div>
-                <!-- Cards ending -->
+                <!--Ending of Cart Container -->
 
-                <div class="w-3/12 flex flex-col gap-6">
-                    <div class="text-center bg-black h-96">
+                <div class="w-full md:w-2/5 lg:w-3/12  flex flex-col gap-6">
+                    <div class="text-center bg-black h-full md:h-1/6 lg:h-2/4">
                         <h3 class="pt-6 text-white font-semibold text-2xl">Selected-5</h3>
-                        <ol class="text-left pl-8 pt-6 leading-9">
+                        <ol class="text-left pl-8 pt-6 pb-12 leading-9">
 
                         </ol>
                     </div>
-                    <div class="text-center bg-black h-96">
+                    <div class="text-center bg-black h-full md:h-1/5 lg:h-3/4">
                         <h3 class="pt-6 text-white font-semibold text-2xl">Budget</h3>
                         <div class="pt-6 w-4/5 mx-auto flex justify-between">
                             <p class="my-auto font-semibold">Per Player :</p>
-                            <input class="w-2/4 h-10 bg-black border-2" type="text">
+                            <input class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
                         </div>
                         <button class="bg-sky-700 w-4/5 py-2 mt-4 font-semibold text-white">Calculate</button>
-                        <h2>Player Expenceses: $<span>0</span></h2>
-                        <div class="pt-6 w-4/5 mx-auto flex justify-between">
+                        <div class="flex justify-between pt-4 pl-8 w-4/5">
+                            <h2 class="text-white font-semibold text-left">Player Expenceses:</h2>
+                            <p>$<span>0</span></p>
+                        </div>
 
+                        <div class="py-2 w-4/5 mx-auto flex justify-between">
+                            <p class="my-auto font-semibold">Manager :</p>
+                            <input class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
+                        </div>
+                        <div class="pt-2 w-4/5 mx-auto flex justify-between">
+                            <p class="my-auto font-semibold">Manager :</p>
+                            <input class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
+                        </div>
+                        <button class="bg-sky-700 w-4/5 py-2 mt-4 font-semibold text-white">Calculate</button>
+                        <div class="flex justify-between pt-4 pl-8 w-4/5 pb-10 md:pb-0 lg:pb-0">
+                            <h2 class="text-white font-semibold text-left">Total Expence:</h2>
+                            <p>$<span>0</span></p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
     </main>
+    <footer>
+        <h2 class="py-10 text-center border-t-2">Copyright @ 2022 All Rights Reserved.</h2>
+    </footer>
 </body>
 
 </html>
