@@ -13,7 +13,7 @@ for (const playerSelectButton of playerSelectButtons) {
         event.target.style.backgroundColor = "gray"
 
         if (playerList.getElementsByClassName("single-list").length == 5) {
-            alert("Uou cannot select more than five player's.");
+            alert("You cannot select more than five player's.");
             event.target.style.background = "#015196"
         }
         else {
