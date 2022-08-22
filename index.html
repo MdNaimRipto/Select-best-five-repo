@@ -16,7 +16,7 @@
 <body class="bg-neutral-800">
     <header class="w-full">
         <div class="header text-center">
-            <h2 class="text-5xl text-orange-600 font-semibold pb-4 pt-32">Best Five Football Players</h2>
+            <h2 class="text-5xl text-orange-600 font-semibold pb-4 pt-28">Best Five Football Players</h2>
             <p class="w-2/4 mx-auto">Select best five football players for your team and create the world's best
                 football team.
             </p>
@@ -138,26 +138,28 @@
                         <h3 class="pt-6 text-white font-semibold text-2xl">Budget</h3>
                         <div class="pt-6 w-4/5 mx-auto flex justify-between">
                             <p class="my-auto font-semibold">Per Player :</p>
-                            <input class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
+                            <input id="per-player-cost" class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
                         </div>
-                        <button class="bg-sky-700 w-4/5 py-2 mt-4 font-semibold text-white">Calculate</button>
-                        <div class="flex justify-between pt-4 pl-8 w-4/5">
+                        <button id="calculate"
+                            class="bg-sky-700 w-4/5 py-2 mt-4 font-semibold text-white">Calculate</button>
+                        <div class="flex justify-between pt-4 pl-8 w-11/12">
                             <h2 class="text-white font-semibold text-left">Player Expenceses:</h2>
-                            <p>$<span>0</span></p>
+                            <p>$<span id="total-player-cost">0</span></p>
                         </div>
 
                         <div class="py-2 w-4/5 mx-auto flex justify-between">
                             <p class="my-auto font-semibold">Manager :</p>
-                            <input class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
+                            <input id="manager-cost" class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
                         </div>
                         <div class="pt-2 w-4/5 mx-auto flex justify-between">
                             <p class="my-auto font-semibold">Coach :</p>
-                            <input class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
+                            <input id="coach-cost" class="w-2/4 h-10 bg-black border-2 pl-2" type="text">
                         </div>
-                        <button class="bg-sky-700 w-4/5 py-2 mt-4 font-semibold text-white">Calculate Total</button>
-                        <div class="flex justify-between pt-4 pl-8 w-4/5 pb-10 md:pb-0 lg:pb-0">
+                        <button id="calculate-total"
+                            class="bg-sky-700 w-4/5 py-2 mt-4 font-semibold text-white">Calculate Total</button>
+                        <div class="flex justify-between pt-4 pl-8 w-11/12 pb-10 md:pb-0 lg:pb-0">
                             <h2 class="text-white font-semibold text-left">Total Expence:</h2>
-                            <p>$<span>0</span></p>
+                            <p>$<span id="total-expence">0</span></p>
                         </div>
                     </div>
 
@@ -171,6 +173,7 @@
 
     <script src="js/utilities.js"></script>
     <script src="js/best-five.js"></script>
+    <script src="js/calculate.js"></script>
 </body>
 
 </html>
